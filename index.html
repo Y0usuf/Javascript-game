@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            transition: all 0.5s;
+        }
+        #game{
+            width: 1500px;
+            height: 750px;
+            background-color: rebeccapurple;
+        }
+        #ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(190, 189, 189);
+            position: absolute;
+        }
+    </style>
+</head>
+<body onload="gameStart(),engine()">
+<center>
+    <div id="game">
+        <div id="ball" onclick="point()" onmouseover="mouseEngine()"></div>
+    </div>
+</center>
+    <script src="brain.js"></script>
+</body>
+</html>
